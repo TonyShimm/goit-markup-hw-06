@@ -316,10 +316,7 @@ ul {
   color: #212121;
 }
 
-.form-group-field {
-  width: 100%;
-  font-size: 16px;
-  line-height: 1.125;
+.form-field-group {
   margin-bottom: 20px;
 }
 
@@ -420,9 +417,10 @@ ul {
 .form-policy-label {
   position: relative;
   display: flex;
+  gap: 8px;
   align-items: center;
+  justify-content: center;
   margin-bottom: 30px;
-  padding-left: 24px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
@@ -441,39 +439,40 @@ ul {
   overflow: hidden;
 }
 
-.form-policy-link {
-  color: #2196f3;
-}
-
-.form-policy-icon-check {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
+.form-policy-icon {
   width: 16px;
   height: 15px;
   opacity: 1;
+  outline: 1px solid black;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.checkbox:checked ~ .form-policy-icon-check {
-  opacity: 0;
+.icon-check {
+  width: 16px;
+  height: 15px;
+  opacity: 1;
 }
 
-.form-policy-icon-checked {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
+.icon-checked {
   width: 16px;
   height: 15px;
   opacity: 0;
   fill: #2196f3;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.checkbox:checked ~ .form-policy-icon-checked {
+.checkbox:checked ~ .icon-check {
+  opacity: 0;
+}
+
+.checkbox:checked ~ .icon-checked {
   opacity: 1;
+}
+
+.policy-link {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #2196f3;
 }
 
 /* Features */
