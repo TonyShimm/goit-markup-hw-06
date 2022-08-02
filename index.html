@@ -74,76 +74,6 @@
         <button class="btn-item" type="button" data-modal-open>
           Заказать услугу
         </button>
-        <div class="backdrop is-hidden" data-modal>
-          <div class="modal">
-            <button class="button-close" data-modal-close>
-              <svg class="button-vector" aria-hidden="true">
-                <use href="./images/icons.svg#icon-close-black"></use>
-              </svg>
-            </button>
-            <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
-            <form class="modal-inputs">
-              <div class="form-field-group">
-                <label class="form-label" for="user-name">Ім'я</label>
-                <div class="form-field">
-                  <input
-                    class="form-input"
-                    type="text"
-                    name="user-name"
-                    id="user-name"
-                  />
-                  <svg class="form-icon">
-                    <use href="./images/icons.svg#icon-person-black"></use>
-                  </svg>
-                </div>
-                <label class="form-label" for="tel">Телефон</label>
-                <div class="form-field">
-                  <input class="form-input" type="tel" />
-                  <svg class="form-icon">
-                    <use href="./images/icons.svg#icon-phone-black"></use>
-                  </svg>
-                </div>
-                <label class="form-label" for="mail">Пошта</label>
-                <div class="form-field">
-                  <input class="form-input" type="email" />
-                  <svg class="form-icon">
-                    <use href="./images/icons.svg#icon-email-black"></use>
-                  </svg>
-                </div>
-                <label class="form-label" for="comment">Коментар</label>
-                <textarea
-                  class="textarea-input"
-                  name="comment"
-                  rows="10"
-                  placeholder="Введіть текст"
-                ></textarea>
-              </div>
-              <label class="form-policy-label">
-                <input
-                  class="checkbox visually-hidden"
-                  type="checkbox"
-                  name="user-policy"
-                />
-                <svg class="icon-check-field">
-                  <use
-                    class="icon-check"
-                    href="./images/icons.svg#icon-vector-5"
-                  ></use>
-
-                  <use
-                    class="icon-checked"
-                    href="./images/icons.svg#icon-vector-6"
-                  ></use>
-                </svg>
-                <span
-                  >Погоджуюся з розсилкою та приймаю
-                  <a class="policy-link" href="#"> Умови договору</a></span
-                >
-              </label>
-              <button class="send-button" type="submit">Відправити</button>
-            </form>
-          </div>
-        </div>
       </section>
       <section class="section">
         <div class="container">
@@ -211,9 +141,8 @@
                 width="370"
                 height="294"
               />
-              <div class="what-we-do-thumb">
-                <p class="what-we-do-text">Десктопні додатки</p>
-              </div>
+
+              <p class="what-we-do-text">Десктопні додатки</p>
             </li>
             <li class="what-we-do-list">
               <img
@@ -223,9 +152,7 @@
                 width="370"
                 height="294"
               />
-              <div class="what-we-do-thumb">
-                <p class="what-we-do-text">Мобільні додатки</p>
-              </div>
+              <p class="what-we-do-text">Мобільні додатки</p>
             </li>
             <li class="what-we-do-list">
               <img
@@ -235,9 +162,7 @@
                 width="370"
                 height="294"
               />
-              <div class="what-we-do-thumb">
-                <p class="what-we-do-text">Дизайнерські рішення</p>
-              </div>
+              <p class="what-we-do-text">Дизайнерські рішення</p>
             </li>
           </ul>
         </div>
@@ -438,6 +363,76 @@
           </ul>
         </div>
       </section>
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button class="button-close" data-modal-close>
+            <svg class="button-vector" aria-hidden="true">
+              <use href="./images/icons.svg#icon-close-black"></use>
+            </svg>
+          </button>
+          <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+          <form class="modal-inputs">
+            <div class="form-field-group">
+              <label class="form-label" for="user-name">Ім'я</label>
+              <div class="form-field">
+                <input
+                  class="form-input"
+                  type="text"
+                  name="user-name"
+                  id="user-name"
+                />
+                <svg class="form-icon">
+                  <use href="./images/icons.svg#icon-person-black"></use>
+                </svg>
+              </div>
+              <label class="form-label" for="tel">Телефон</label>
+              <div class="form-field">
+                <input class="form-input" type="tel" />
+                <svg class="form-icon">
+                  <use href="./images/icons.svg#icon-phone-black"></use>
+                </svg>
+              </div>
+              <label class="form-label" for="mail">Пошта</label>
+              <div class="form-field">
+                <input class="form-input" type="email" />
+                <svg class="form-icon">
+                  <use href="./images/icons.svg#icon-email-black"></use>
+                </svg>
+              </div>
+              <label class="form-label" for="comment">Коментар</label>
+              <textarea
+                class="textarea-input"
+                name="comment"
+                rows="10"
+                placeholder="Введіть текст"
+              ></textarea>
+            </div>
+            <label class="form-policy-label">
+              <input
+                class="checkbox visually-hidden"
+                type="checkbox"
+                name="user-policy"
+              />
+              <svg class="icon-check-field">
+                <use
+                  class="icon-check"
+                  href="./images/icons.svg#icon-vector-5"
+                ></use>
+
+                <use
+                  class="icon-checked"
+                  href="./images/icons.svg#icon-vector-6"
+                ></use>
+              </svg>
+              <span
+                >Погоджуюся з розсилкою та приймаю
+                <a class="policy-link" href="#"> Умови договору</a></span
+              >
+            </label>
+            <button class="send-button" type="submit">Відправити</button>
+          </form>
+        </div>
+      </div>
     </main>
     <footer class="footer">
       <div class="container container-list">
@@ -487,7 +482,7 @@
         <div class="join-subscribe">
           <p class="join-text">Підпишіться на розсилку</p>
           <form class="join-form">
-            <label class="email-label" for="mail"></label>
+            <label class="visually-hidden" for="mail"></label>
             <input
               class="email-input"
               type="email"
